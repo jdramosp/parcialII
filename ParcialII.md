@@ -1,3 +1,5 @@
+//ejercicio 1
+
 import java.util.*;
 interface AdvancedArithmetic{
   int divisor_sum(int n);
@@ -42,3 +44,40 @@ class Solution{
         }
     }
 }
+
+
+//ejercicio 2
+
+package book;
+
+import java.util.Scanner;
+
+abstract class Book{
+    String title;
+    abstract void setTitle(String s);
+    String getTitle(){
+        return title;
+    }
+}
+ 
+public class main{
+ 
+    public static void main(String []args){
+        
+        class MyBook extends Book{
+
+        @Override
+        void setTitle(String s) {
+
+        }
+
+      }      
+        Scanner sc = new Scanner(System.in) ;
+        String title=sc.nextLine();
+        MyBook new_novel=new MyBook();
+        new_novel.setTitle(title);
+        System.out.println("The title is: "+new_novel.getTitle());
+    }
+        
+    }
+
